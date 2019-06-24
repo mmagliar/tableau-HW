@@ -1,0 +1,1092 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2019.1">
+  <Nodes>
+    <Node ToolID="19">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1482" y="294" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\mmagliar\AppData\Local\Temp\7\Engine_40636_bfc9a5af03b144e18604af14956ec95f_\Engine_40900_eb829e7d941a4f4c9b47f2e9bc3b755d_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="20">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextToColumns.TextToColumns">
+        <Position x="810" y="282" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Field>FileName</Field>
+          <ErrorHandling>Last</ErrorHandling>
+          <RootName>FileName</RootName>
+          <Delimeters value="-" />
+          <NumFields value="3" />
+          <Flags value="0" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextToColumns" />
+    </Node>
+    <Node ToolID="21">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="906" y="294" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="FileName" selected="False" />
+            <SelectField field="FileName2" selected="True" rename="Date" type="V_String" size="254" />
+            <SelectField field="FileName3" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="30">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DateTime.DateTime">
+        <Position x="1098" y="294" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <IsFrom value="False" />
+          <InputFieldName>Date</InputFieldName>
+          <Format>yyyyMM</Format>
+          <OutputFieldName>Year-Month-Day</OutputFieldName>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Convert Date From:
+Custom</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDateTime" />
+    </Node>
+    <Node ToolID="32">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="1194" y="294" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Year-Month-Day" selected="True" type="String" size="10" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="33">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextToColumns.TextToColumns">
+        <Position x="1290" y="294" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Field>Year-Month-Day</Field>
+          <ErrorHandling>Last</ErrorHandling>
+          <RootName>Year-Month-Day</RootName>
+          <Delimeters value="-" />
+          <NumFields value="3" />
+          <Flags value="0" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextToColumns" />
+    </Node>
+    <Node ToolID="34">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="1386" y="294" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="tripduration" selected="True" type="Double" size="8" />
+            <SelectField field="starttime" selected="True" type="String" size="254" />
+            <SelectField field="stoptime" selected="True" type="String" size="254" />
+            <SelectField field="end station id" selected="True" type="String" size="254" />
+            <SelectField field="birth year" selected="True" type="Int16" size="2" />
+            <SelectField field="FileName1" selected="False" />
+            <SelectField field="Date" selected="True" type="String" size="254" />
+            <SelectField field="Year-Month-Day1" selected="True" rename="Year" />
+            <SelectField field="Year-Month-Day2" selected="True" rename="Month" />
+            <SelectField field="Year-Month-Day3" selected="True" rename="Day" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="27">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="29.99999" y="5.999992" width="152.0632" height="24" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Container 27</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="True" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="1">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="54.99999" y="55.00029" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File OutputFileName="FileName" RecordLimit="" SearchSubDirs="False" FileFormat="0">C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201801-citibike-tripdata.csv</File>
+              <FormatSpecificOptions>
+                <CodePage>28591</CodePage>
+                <Delimeter>,</Delimeter>
+                <IgnoreErrors>False</IgnoreErrors>
+                <FieldLen>254</FieldLen>
+                <AllowShareWrite>False</AllowShareWrite>
+                <HeaderRow>True</HeaderRow>
+                <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+                <ImportLine>1</ImportLine>
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>JC-201801-citibike-tripdata.csv</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="tripduration" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201801-citibike-tripdata.csv" type="V_String" />
+                <Field name="starttime" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201801-citibike-tripdata.csv" type="V_String" />
+                <Field name="stoptime" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201801-citibike-tripdata.csv" type="V_String" />
+                <Field name="start station id" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201801-citibike-tripdata.csv" type="V_String" />
+                <Field name="start station name" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201801-citibike-tripdata.csv" type="V_String" />
+                <Field name="start station latitude" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201801-citibike-tripdata.csv" type="V_String" />
+                <Field name="start station longitude" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201801-citibike-tripdata.csv" type="V_String" />
+                <Field name="end station id" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201801-citibike-tripdata.csv" type="V_String" />
+                <Field name="end station name" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201801-citibike-tripdata.csv" type="V_String" />
+                <Field name="end station latitude" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201801-citibike-tripdata.csv" type="V_String" />
+                <Field name="end station longitude" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201801-citibike-tripdata.csv" type="V_String" />
+                <Field name="bikeid" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201801-citibike-tripdata.csv" type="V_String" />
+                <Field name="usertype" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201801-citibike-tripdata.csv" type="V_String" />
+                <Field name="birth year" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201801-citibike-tripdata.csv" type="V_String" />
+                <Field name="gender" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201801-citibike-tripdata.csv" type="V_String" />
+                <Field name="FileName" size="254" source="File: FileName" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="3">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="151" y="66.99983" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File OutputFileName="FileName" RecordLimit="" SearchSubDirs="False" FileFormat="0">C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201802-citibike-tripdata.csv</File>
+              <FormatSpecificOptions>
+                <CodePage>28591</CodePage>
+                <Delimeter>,</Delimeter>
+                <IgnoreErrors>False</IgnoreErrors>
+                <FieldLen>254</FieldLen>
+                <AllowShareWrite>False</AllowShareWrite>
+                <HeaderRow>True</HeaderRow>
+                <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+                <ImportLine>1</ImportLine>
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>JC-201802-citibike-tripdata.csv</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="tripduration" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201802-citibike-tripdata.csv" type="V_String" />
+                <Field name="starttime" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201802-citibike-tripdata.csv" type="V_String" />
+                <Field name="stoptime" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201802-citibike-tripdata.csv" type="V_String" />
+                <Field name="start station id" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201802-citibike-tripdata.csv" type="V_String" />
+                <Field name="start station name" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201802-citibike-tripdata.csv" type="V_String" />
+                <Field name="start station latitude" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201802-citibike-tripdata.csv" type="V_String" />
+                <Field name="start station longitude" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201802-citibike-tripdata.csv" type="V_String" />
+                <Field name="end station id" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201802-citibike-tripdata.csv" type="V_String" />
+                <Field name="end station name" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201802-citibike-tripdata.csv" type="V_String" />
+                <Field name="end station latitude" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201802-citibike-tripdata.csv" type="V_String" />
+                <Field name="end station longitude" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201802-citibike-tripdata.csv" type="V_String" />
+                <Field name="bikeid" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201802-citibike-tripdata.csv" type="V_String" />
+                <Field name="usertype" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201802-citibike-tripdata.csv" type="V_String" />
+                <Field name="birth year" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201802-citibike-tripdata.csv" type="V_String" />
+                <Field name="gender" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201802-citibike-tripdata.csv" type="V_String" />
+                <Field name="FileName" size="254" source="File: FileName" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="4">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="247" y="67.00005" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File OutputFileName="FileName" RecordLimit="" SearchSubDirs="False" FileFormat="0">C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201803-citibike-tripdata.csv</File>
+              <FormatSpecificOptions>
+                <CodePage>28591</CodePage>
+                <Delimeter>,</Delimeter>
+                <IgnoreErrors>False</IgnoreErrors>
+                <FieldLen>254</FieldLen>
+                <AllowShareWrite>False</AllowShareWrite>
+                <HeaderRow>True</HeaderRow>
+                <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+                <ImportLine>1</ImportLine>
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>JC-201803-citibike-tripdata.csv</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="tripduration" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201803-citibike-tripdata.csv" type="V_String" />
+                <Field name="starttime" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201803-citibike-tripdata.csv" type="V_String" />
+                <Field name="stoptime" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201803-citibike-tripdata.csv" type="V_String" />
+                <Field name="start station id" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201803-citibike-tripdata.csv" type="V_String" />
+                <Field name="start station name" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201803-citibike-tripdata.csv" type="V_String" />
+                <Field name="start station latitude" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201803-citibike-tripdata.csv" type="V_String" />
+                <Field name="start station longitude" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201803-citibike-tripdata.csv" type="V_String" />
+                <Field name="end station id" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201803-citibike-tripdata.csv" type="V_String" />
+                <Field name="end station name" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201803-citibike-tripdata.csv" type="V_String" />
+                <Field name="end station latitude" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201803-citibike-tripdata.csv" type="V_String" />
+                <Field name="end station longitude" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201803-citibike-tripdata.csv" type="V_String" />
+                <Field name="bikeid" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201803-citibike-tripdata.csv" type="V_String" />
+                <Field name="usertype" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201803-citibike-tripdata.csv" type="V_String" />
+                <Field name="birth year" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201803-citibike-tripdata.csv" type="V_String" />
+                <Field name="gender" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201803-citibike-tripdata.csv" type="V_String" />
+                <Field name="FileName" size="254" source="File: FileName" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="5">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="343" y="67.0001" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File OutputFileName="FileName" RecordLimit="" SearchSubDirs="False" FileFormat="0">C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201804-citibike-tripdata.csv</File>
+              <FormatSpecificOptions>
+                <CodePage>28591</CodePage>
+                <Delimeter>,</Delimeter>
+                <IgnoreErrors>False</IgnoreErrors>
+                <FieldLen>254</FieldLen>
+                <AllowShareWrite>False</AllowShareWrite>
+                <HeaderRow>True</HeaderRow>
+                <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+                <ImportLine>1</ImportLine>
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>JC-201804-citibike-tripdata.csv</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="tripduration" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201804-citibike-tripdata.csv" type="V_String" />
+                <Field name="starttime" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201804-citibike-tripdata.csv" type="V_String" />
+                <Field name="stoptime" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201804-citibike-tripdata.csv" type="V_String" />
+                <Field name="start station id" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201804-citibike-tripdata.csv" type="V_String" />
+                <Field name="start station name" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201804-citibike-tripdata.csv" type="V_String" />
+                <Field name="start station latitude" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201804-citibike-tripdata.csv" type="V_String" />
+                <Field name="start station longitude" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201804-citibike-tripdata.csv" type="V_String" />
+                <Field name="end station id" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201804-citibike-tripdata.csv" type="V_String" />
+                <Field name="end station name" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201804-citibike-tripdata.csv" type="V_String" />
+                <Field name="end station latitude" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201804-citibike-tripdata.csv" type="V_String" />
+                <Field name="end station longitude" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201804-citibike-tripdata.csv" type="V_String" />
+                <Field name="bikeid" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201804-citibike-tripdata.csv" type="V_String" />
+                <Field name="usertype" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201804-citibike-tripdata.csv" type="V_String" />
+                <Field name="birth year" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201804-citibike-tripdata.csv" type="V_String" />
+                <Field name="gender" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201804-citibike-tripdata.csv" type="V_String" />
+                <Field name="FileName" size="254" source="File: FileName" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="6">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="451" y="55.00009" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File OutputFileName="FileName" RecordLimit="" SearchSubDirs="False" FileFormat="0">C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201805-citibike-tripdata.csv</File>
+              <FormatSpecificOptions>
+                <CodePage>28591</CodePage>
+                <Delimeter>,</Delimeter>
+                <IgnoreErrors>False</IgnoreErrors>
+                <FieldLen>254</FieldLen>
+                <AllowShareWrite>False</AllowShareWrite>
+                <HeaderRow>True</HeaderRow>
+                <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+                <ImportLine>1</ImportLine>
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>JC-201805-citibike-tripdata.csv</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="tripduration" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201805-citibike-tripdata.csv" type="V_String" />
+                <Field name="starttime" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201805-citibike-tripdata.csv" type="V_String" />
+                <Field name="stoptime" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201805-citibike-tripdata.csv" type="V_String" />
+                <Field name="start station id" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201805-citibike-tripdata.csv" type="V_String" />
+                <Field name="start station name" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201805-citibike-tripdata.csv" type="V_String" />
+                <Field name="start station latitude" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201805-citibike-tripdata.csv" type="V_String" />
+                <Field name="start station longitude" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201805-citibike-tripdata.csv" type="V_String" />
+                <Field name="end station id" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201805-citibike-tripdata.csv" type="V_String" />
+                <Field name="end station name" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201805-citibike-tripdata.csv" type="V_String" />
+                <Field name="end station latitude" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201805-citibike-tripdata.csv" type="V_String" />
+                <Field name="end station longitude" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201805-citibike-tripdata.csv" type="V_String" />
+                <Field name="bikeid" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201805-citibike-tripdata.csv" type="V_String" />
+                <Field name="usertype" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201805-citibike-tripdata.csv" type="V_String" />
+                <Field name="birth year" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201805-citibike-tripdata.csv" type="V_String" />
+                <Field name="gender" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201805-citibike-tripdata.csv" type="V_String" />
+                <Field name="FileName" size="254" source="File: FileName" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="7">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="571" y="54.99999" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File OutputFileName="FileName" RecordLimit="" SearchSubDirs="False" FileFormat="0">C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201806-citibike-tripdata.csv</File>
+              <FormatSpecificOptions>
+                <CodePage>28591</CodePage>
+                <Delimeter>,</Delimeter>
+                <IgnoreErrors>False</IgnoreErrors>
+                <FieldLen>254</FieldLen>
+                <AllowShareWrite>False</AllowShareWrite>
+                <HeaderRow>True</HeaderRow>
+                <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+                <ImportLine>1</ImportLine>
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>JC-201806-citibike-tripdata.csv</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="tripduration" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201806-citibike-tripdata.csv" type="V_String" />
+                <Field name="starttime" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201806-citibike-tripdata.csv" type="V_String" />
+                <Field name="stoptime" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201806-citibike-tripdata.csv" type="V_String" />
+                <Field name="start station id" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201806-citibike-tripdata.csv" type="V_String" />
+                <Field name="start station name" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201806-citibike-tripdata.csv" type="V_String" />
+                <Field name="start station latitude" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201806-citibike-tripdata.csv" type="V_String" />
+                <Field name="start station longitude" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201806-citibike-tripdata.csv" type="V_String" />
+                <Field name="end station id" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201806-citibike-tripdata.csv" type="V_String" />
+                <Field name="end station name" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201806-citibike-tripdata.csv" type="V_String" />
+                <Field name="end station latitude" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201806-citibike-tripdata.csv" type="V_String" />
+                <Field name="end station longitude" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201806-citibike-tripdata.csv" type="V_String" />
+                <Field name="bikeid" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201806-citibike-tripdata.csv" type="V_String" />
+                <Field name="usertype" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201806-citibike-tripdata.csv" type="V_String" />
+                <Field name="birth year" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201806-citibike-tripdata.csv" type="V_String" />
+                <Field name="gender" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201806-citibike-tripdata.csv" type="V_String" />
+                <Field name="FileName" size="254" source="File: FileName" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="8">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="679" y="54.99999" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File OutputFileName="FileName" RecordLimit="" SearchSubDirs="False" FileFormat="0">C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201807-citibike-tripdata.csv</File>
+              <FormatSpecificOptions>
+                <CodePage>28591</CodePage>
+                <Delimeter>,</Delimeter>
+                <IgnoreErrors>False</IgnoreErrors>
+                <FieldLen>254</FieldLen>
+                <AllowShareWrite>False</AllowShareWrite>
+                <HeaderRow>True</HeaderRow>
+                <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+                <ImportLine>1</ImportLine>
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>JC-201807-citibike-tripdata.csv</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="tripduration" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201807-citibike-tripdata.csv" type="V_String" />
+                <Field name="starttime" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201807-citibike-tripdata.csv" type="V_String" />
+                <Field name="stoptime" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201807-citibike-tripdata.csv" type="V_String" />
+                <Field name="start station id" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201807-citibike-tripdata.csv" type="V_String" />
+                <Field name="start station name" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201807-citibike-tripdata.csv" type="V_String" />
+                <Field name="start station latitude" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201807-citibike-tripdata.csv" type="V_String" />
+                <Field name="start station longitude" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201807-citibike-tripdata.csv" type="V_String" />
+                <Field name="end station id" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201807-citibike-tripdata.csv" type="V_String" />
+                <Field name="end station name" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201807-citibike-tripdata.csv" type="V_String" />
+                <Field name="end station latitude" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201807-citibike-tripdata.csv" type="V_String" />
+                <Field name="end station longitude" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201807-citibike-tripdata.csv" type="V_String" />
+                <Field name="bikeid" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201807-citibike-tripdata.csv" type="V_String" />
+                <Field name="usertype" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201807-citibike-tripdata.csv" type="V_String" />
+                <Field name="birth year" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201807-citibike-tripdata.csv" type="V_String" />
+                <Field name="gender" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201807-citibike-tripdata.csv" type="V_String" />
+                <Field name="FileName" size="254" source="File: FileName" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="9">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="775" y="55.00005" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File OutputFileName="FileName" RecordLimit="" SearchSubDirs="False" FileFormat="0">C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201808-citibike-tripdata.csv</File>
+              <FormatSpecificOptions>
+                <CodePage>28591</CodePage>
+                <Delimeter>,</Delimeter>
+                <IgnoreErrors>False</IgnoreErrors>
+                <FieldLen>254</FieldLen>
+                <AllowShareWrite>False</AllowShareWrite>
+                <HeaderRow>True</HeaderRow>
+                <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+                <ImportLine>1</ImportLine>
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>JC-201808-citibike-tripdata.csv</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="tripduration" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201808-citibike-tripdata.csv" type="V_String" />
+                <Field name="starttime" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201808-citibike-tripdata.csv" type="V_String" />
+                <Field name="stoptime" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201808-citibike-tripdata.csv" type="V_String" />
+                <Field name="start station id" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201808-citibike-tripdata.csv" type="V_String" />
+                <Field name="start station name" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201808-citibike-tripdata.csv" type="V_String" />
+                <Field name="start station latitude" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201808-citibike-tripdata.csv" type="V_String" />
+                <Field name="start station longitude" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201808-citibike-tripdata.csv" type="V_String" />
+                <Field name="end station id" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201808-citibike-tripdata.csv" type="V_String" />
+                <Field name="end station name" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201808-citibike-tripdata.csv" type="V_String" />
+                <Field name="end station latitude" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201808-citibike-tripdata.csv" type="V_String" />
+                <Field name="end station longitude" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201808-citibike-tripdata.csv" type="V_String" />
+                <Field name="bikeid" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201808-citibike-tripdata.csv" type="V_String" />
+                <Field name="usertype" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201808-citibike-tripdata.csv" type="V_String" />
+                <Field name="birth year" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201808-citibike-tripdata.csv" type="V_String" />
+                <Field name="gender" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201808-citibike-tripdata.csv" type="V_String" />
+                <Field name="FileName" size="254" source="File: FileName" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="10">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="871" y="55.00005" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File OutputFileName="FileName" RecordLimit="" SearchSubDirs="False" FileFormat="0">C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201809-citibike-tripdata.csv</File>
+              <FormatSpecificOptions>
+                <CodePage>28591</CodePage>
+                <Delimeter>,</Delimeter>
+                <IgnoreErrors>False</IgnoreErrors>
+                <FieldLen>254</FieldLen>
+                <AllowShareWrite>False</AllowShareWrite>
+                <HeaderRow>True</HeaderRow>
+                <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+                <ImportLine>1</ImportLine>
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>JC-201809-citibike-tripdata.csv</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="tripduration" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201809-citibike-tripdata.csv" type="V_String" />
+                <Field name="starttime" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201809-citibike-tripdata.csv" type="V_String" />
+                <Field name="stoptime" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201809-citibike-tripdata.csv" type="V_String" />
+                <Field name="start station id" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201809-citibike-tripdata.csv" type="V_String" />
+                <Field name="start station name" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201809-citibike-tripdata.csv" type="V_String" />
+                <Field name="start station latitude" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201809-citibike-tripdata.csv" type="V_String" />
+                <Field name="start station longitude" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201809-citibike-tripdata.csv" type="V_String" />
+                <Field name="end station id" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201809-citibike-tripdata.csv" type="V_String" />
+                <Field name="end station name" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201809-citibike-tripdata.csv" type="V_String" />
+                <Field name="end station latitude" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201809-citibike-tripdata.csv" type="V_String" />
+                <Field name="end station longitude" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201809-citibike-tripdata.csv" type="V_String" />
+                <Field name="bikeid" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201809-citibike-tripdata.csv" type="V_String" />
+                <Field name="usertype" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201809-citibike-tripdata.csv" type="V_String" />
+                <Field name="birth year" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201809-citibike-tripdata.csv" type="V_String" />
+                <Field name="gender" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201809-citibike-tripdata.csv" type="V_String" />
+                <Field name="FileName" size="254" source="File: FileName" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="11">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="979" y="67.00004" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File OutputFileName="FileName" RecordLimit="" SearchSubDirs="False" FileFormat="0">C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201810-citibike-tripdata.csv</File>
+              <FormatSpecificOptions>
+                <CodePage>28591</CodePage>
+                <Delimeter>,</Delimeter>
+                <IgnoreErrors>False</IgnoreErrors>
+                <FieldLen>254</FieldLen>
+                <AllowShareWrite>False</AllowShareWrite>
+                <HeaderRow>True</HeaderRow>
+                <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+                <ImportLine>1</ImportLine>
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>JC-201810-citibike-tripdata.csv</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="tripduration" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201810-citibike-tripdata.csv" type="V_String" />
+                <Field name="starttime" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201810-citibike-tripdata.csv" type="V_String" />
+                <Field name="stoptime" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201810-citibike-tripdata.csv" type="V_String" />
+                <Field name="start station id" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201810-citibike-tripdata.csv" type="V_String" />
+                <Field name="start station name" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201810-citibike-tripdata.csv" type="V_String" />
+                <Field name="start station latitude" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201810-citibike-tripdata.csv" type="V_String" />
+                <Field name="start station longitude" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201810-citibike-tripdata.csv" type="V_String" />
+                <Field name="end station id" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201810-citibike-tripdata.csv" type="V_String" />
+                <Field name="end station name" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201810-citibike-tripdata.csv" type="V_String" />
+                <Field name="end station latitude" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201810-citibike-tripdata.csv" type="V_String" />
+                <Field name="end station longitude" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201810-citibike-tripdata.csv" type="V_String" />
+                <Field name="bikeid" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201810-citibike-tripdata.csv" type="V_String" />
+                <Field name="usertype" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201810-citibike-tripdata.csv" type="V_String" />
+                <Field name="birth year" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201810-citibike-tripdata.csv" type="V_String" />
+                <Field name="gender" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201810-citibike-tripdata.csv" type="V_String" />
+                <Field name="FileName" size="254" source="File: FileName" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="12">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="1075" y="67.00005" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File OutputFileName="FileName" RecordLimit="" SearchSubDirs="False" FileFormat="0">C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201811-citibike-tripdata.csv</File>
+              <FormatSpecificOptions>
+                <CodePage>28591</CodePage>
+                <Delimeter>,</Delimeter>
+                <IgnoreErrors>False</IgnoreErrors>
+                <FieldLen>254</FieldLen>
+                <AllowShareWrite>False</AllowShareWrite>
+                <HeaderRow>True</HeaderRow>
+                <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+                <ImportLine>1</ImportLine>
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>JC-201811-citibike-tripdata.csv</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="tripduration" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201811-citibike-tripdata.csv" type="V_String" />
+                <Field name="starttime" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201811-citibike-tripdata.csv" type="V_String" />
+                <Field name="stoptime" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201811-citibike-tripdata.csv" type="V_String" />
+                <Field name="start station id" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201811-citibike-tripdata.csv" type="V_String" />
+                <Field name="start station name" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201811-citibike-tripdata.csv" type="V_String" />
+                <Field name="start station latitude" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201811-citibike-tripdata.csv" type="V_String" />
+                <Field name="start station longitude" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201811-citibike-tripdata.csv" type="V_String" />
+                <Field name="end station id" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201811-citibike-tripdata.csv" type="V_String" />
+                <Field name="end station name" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201811-citibike-tripdata.csv" type="V_String" />
+                <Field name="end station latitude" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201811-citibike-tripdata.csv" type="V_String" />
+                <Field name="end station longitude" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201811-citibike-tripdata.csv" type="V_String" />
+                <Field name="bikeid" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201811-citibike-tripdata.csv" type="V_String" />
+                <Field name="usertype" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201811-citibike-tripdata.csv" type="V_String" />
+                <Field name="birth year" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201811-citibike-tripdata.csv" type="V_String" />
+                <Field name="gender" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201811-citibike-tripdata.csv" type="V_String" />
+                <Field name="FileName" size="254" source="File: FileName" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="13">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="1183" y="67.00002" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File OutputFileName="FileName" RecordLimit="" SearchSubDirs="False" FileFormat="0">C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201812-citibike-tripdata.csv</File>
+              <FormatSpecificOptions>
+                <CodePage>28591</CodePage>
+                <Delimeter>,</Delimeter>
+                <IgnoreErrors>False</IgnoreErrors>
+                <FieldLen>254</FieldLen>
+                <AllowShareWrite>False</AllowShareWrite>
+                <HeaderRow>True</HeaderRow>
+                <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+                <ImportLine>1</ImportLine>
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>JC-201812-citibike-tripdata.csv</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="tripduration" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201812-citibike-tripdata.csv" type="V_String" />
+                <Field name="starttime" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201812-citibike-tripdata.csv" type="V_String" />
+                <Field name="stoptime" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201812-citibike-tripdata.csv" type="V_String" />
+                <Field name="start station id" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201812-citibike-tripdata.csv" type="V_String" />
+                <Field name="start station name" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201812-citibike-tripdata.csv" type="V_String" />
+                <Field name="start station latitude" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201812-citibike-tripdata.csv" type="V_String" />
+                <Field name="start station longitude" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201812-citibike-tripdata.csv" type="V_String" />
+                <Field name="end station id" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201812-citibike-tripdata.csv" type="V_String" />
+                <Field name="end station name" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201812-citibike-tripdata.csv" type="V_String" />
+                <Field name="end station latitude" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201812-citibike-tripdata.csv" type="V_String" />
+                <Field name="end station longitude" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201812-citibike-tripdata.csv" type="V_String" />
+                <Field name="bikeid" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201812-citibike-tripdata.csv" type="V_String" />
+                <Field name="usertype" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201812-citibike-tripdata.csv" type="V_String" />
+                <Field name="birth year" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201812-citibike-tripdata.csv" type="V_String" />
+                <Field name="gender" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201812-citibike-tripdata.csv" type="V_String" />
+                <Field name="FileName" size="254" source="File: FileName" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="14">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="1267" y="79.00005" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File OutputFileName="FileName" RecordLimit="" SearchSubDirs="False" FileFormat="0">C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201901-citibike-tripdata.csv</File>
+              <FormatSpecificOptions>
+                <CodePage>28591</CodePage>
+                <Delimeter>,</Delimeter>
+                <IgnoreErrors>False</IgnoreErrors>
+                <FieldLen>254</FieldLen>
+                <AllowShareWrite>False</AllowShareWrite>
+                <HeaderRow>True</HeaderRow>
+                <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+                <ImportLine>1</ImportLine>
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>JC-201901-citibike-tripdata.csv</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="tripduration" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201901-citibike-tripdata.csv" type="V_String" />
+                <Field name="starttime" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201901-citibike-tripdata.csv" type="V_String" />
+                <Field name="stoptime" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201901-citibike-tripdata.csv" type="V_String" />
+                <Field name="start station id" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201901-citibike-tripdata.csv" type="V_String" />
+                <Field name="start station name" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201901-citibike-tripdata.csv" type="V_String" />
+                <Field name="start station latitude" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201901-citibike-tripdata.csv" type="V_String" />
+                <Field name="start station longitude" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201901-citibike-tripdata.csv" type="V_String" />
+                <Field name="end station id" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201901-citibike-tripdata.csv" type="V_String" />
+                <Field name="end station name" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201901-citibike-tripdata.csv" type="V_String" />
+                <Field name="end station latitude" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201901-citibike-tripdata.csv" type="V_String" />
+                <Field name="end station longitude" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201901-citibike-tripdata.csv" type="V_String" />
+                <Field name="bikeid" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201901-citibike-tripdata.csv" type="V_String" />
+                <Field name="usertype" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201901-citibike-tripdata.csv" type="V_String" />
+                <Field name="birth year" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201901-citibike-tripdata.csv" type="V_String" />
+                <Field name="gender" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201901-citibike-tripdata.csv" type="V_String" />
+                <Field name="FileName" size="254" source="File: FileName" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="15">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="1387" y="79.00005" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File OutputFileName="FileName" RecordLimit="" SearchSubDirs="False" FileFormat="0">C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201902-citibike-tripdata.csv</File>
+              <FormatSpecificOptions>
+                <CodePage>28591</CodePage>
+                <Delimeter>,</Delimeter>
+                <IgnoreErrors>False</IgnoreErrors>
+                <FieldLen>254</FieldLen>
+                <AllowShareWrite>False</AllowShareWrite>
+                <HeaderRow>True</HeaderRow>
+                <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+                <ImportLine>1</ImportLine>
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>JC-201902-citibike-tripdata.csv</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="tripduration" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201902-citibike-tripdata.csv" type="V_String" />
+                <Field name="starttime" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201902-citibike-tripdata.csv" type="V_String" />
+                <Field name="stoptime" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201902-citibike-tripdata.csv" type="V_String" />
+                <Field name="start station id" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201902-citibike-tripdata.csv" type="V_String" />
+                <Field name="start station name" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201902-citibike-tripdata.csv" type="V_String" />
+                <Field name="start station latitude" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201902-citibike-tripdata.csv" type="V_String" />
+                <Field name="start station longitude" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201902-citibike-tripdata.csv" type="V_String" />
+                <Field name="end station id" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201902-citibike-tripdata.csv" type="V_String" />
+                <Field name="end station name" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201902-citibike-tripdata.csv" type="V_String" />
+                <Field name="end station latitude" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201902-citibike-tripdata.csv" type="V_String" />
+                <Field name="end station longitude" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201902-citibike-tripdata.csv" type="V_String" />
+                <Field name="bikeid" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201902-citibike-tripdata.csv" type="V_String" />
+                <Field name="usertype" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201902-citibike-tripdata.csv" type="V_String" />
+                <Field name="birth year" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201902-citibike-tripdata.csv" type="V_String" />
+                <Field name="gender" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201902-citibike-tripdata.csv" type="V_String" />
+                <Field name="FileName" size="254" source="File: FileName" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="16">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="1483" y="103" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File OutputFileName="FileName" RecordLimit="" SearchSubDirs="False" FileFormat="0">C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201903-citibike-tripdata.csv</File>
+              <FormatSpecificOptions>
+                <CodePage>28591</CodePage>
+                <Delimeter>,</Delimeter>
+                <IgnoreErrors>False</IgnoreErrors>
+                <FieldLen>254</FieldLen>
+                <AllowShareWrite>False</AllowShareWrite>
+                <HeaderRow>True</HeaderRow>
+                <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+                <ImportLine>1</ImportLine>
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>JC-201903-citibike-tripdata.csv</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="tripduration" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201903-citibike-tripdata.csv" type="V_String" />
+                <Field name="starttime" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201903-citibike-tripdata.csv" type="V_String" />
+                <Field name="stoptime" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201903-citibike-tripdata.csv" type="V_String" />
+                <Field name="start station id" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201903-citibike-tripdata.csv" type="V_String" />
+                <Field name="start station name" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201903-citibike-tripdata.csv" type="V_String" />
+                <Field name="start station latitude" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201903-citibike-tripdata.csv" type="V_String" />
+                <Field name="start station longitude" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201903-citibike-tripdata.csv" type="V_String" />
+                <Field name="end station id" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201903-citibike-tripdata.csv" type="V_String" />
+                <Field name="end station name" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201903-citibike-tripdata.csv" type="V_String" />
+                <Field name="end station latitude" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201903-citibike-tripdata.csv" type="V_String" />
+                <Field name="end station longitude" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201903-citibike-tripdata.csv" type="V_String" />
+                <Field name="bikeid" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201903-citibike-tripdata.csv" type="V_String" />
+                <Field name="usertype" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201903-citibike-tripdata.csv" type="V_String" />
+                <Field name="birth year" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201903-citibike-tripdata.csv" type="V_String" />
+                <Field name="gender" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201903-citibike-tripdata.csv" type="V_String" />
+                <Field name="FileName" size="254" source="File: FileName" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="17">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="1519" y="175" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File OutputFileName="FileName" RecordLimit="" SearchSubDirs="False" FileFormat="0">C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201904-citibike-tripdata.csv</File>
+              <FormatSpecificOptions>
+                <CodePage>28591</CodePage>
+                <Delimeter>,</Delimeter>
+                <IgnoreErrors>False</IgnoreErrors>
+                <FieldLen>254</FieldLen>
+                <AllowShareWrite>False</AllowShareWrite>
+                <HeaderRow>True</HeaderRow>
+                <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+                <ImportLine>1</ImportLine>
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>JC-201904-citibike-tripdata.csv</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="tripduration" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201904-citibike-tripdata.csv" type="V_String" />
+                <Field name="starttime" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201904-citibike-tripdata.csv" type="V_String" />
+                <Field name="stoptime" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201904-citibike-tripdata.csv" type="V_String" />
+                <Field name="start station id" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201904-citibike-tripdata.csv" type="V_String" />
+                <Field name="start station name" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201904-citibike-tripdata.csv" type="V_String" />
+                <Field name="start station latitude" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201904-citibike-tripdata.csv" type="V_String" />
+                <Field name="start station longitude" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201904-citibike-tripdata.csv" type="V_String" />
+                <Field name="end station id" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201904-citibike-tripdata.csv" type="V_String" />
+                <Field name="end station name" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201904-citibike-tripdata.csv" type="V_String" />
+                <Field name="end station latitude" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201904-citibike-tripdata.csv" type="V_String" />
+                <Field name="end station longitude" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201904-citibike-tripdata.csv" type="V_String" />
+                <Field name="bikeid" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201904-citibike-tripdata.csv" type="V_String" />
+                <Field name="usertype" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201904-citibike-tripdata.csv" type="V_String" />
+                <Field name="birth year" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201904-citibike-tripdata.csv" type="V_String" />
+                <Field name="gender" size="254" source="File: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\JC-201904-citibike-tripdata.csv" type="V_String" />
+                <Field name="FileName" size="254" source="File: FileName" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="18">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+            <Position x="715" y="271" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <ByName_ErrorMode>Warning</ByName_ErrorMode>
+              <ByName_OutputMode>All</ByName_OutputMode>
+              <Mode>ByName</Mode>
+              <SetOutputOrder value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+        </Node>
+      </ChildNodes>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="20" Connection="Output" />
+      <Destination ToolID="21" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="21" Connection="Output" />
+      <Destination ToolID="30" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="30" Connection="Output" />
+      <Destination ToolID="32" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="32" Connection="Output" />
+      <Destination ToolID="33" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="33" Connection="Output" />
+      <Destination ToolID="34" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="34" Connection="Output" />
+      <Destination ToolID="19" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="18" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="18" Connection="Input" />
+    </Connection>
+    <Connection name="#3">
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="18" Connection="Input" />
+    </Connection>
+    <Connection name="#4">
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="18" Connection="Input" />
+    </Connection>
+    <Connection name="#5">
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="18" Connection="Input" />
+    </Connection>
+    <Connection name="#6">
+      <Origin ToolID="7" Connection="Output" />
+      <Destination ToolID="18" Connection="Input" />
+    </Connection>
+    <Connection name="#7">
+      <Origin ToolID="8" Connection="Output" />
+      <Destination ToolID="18" Connection="Input" />
+    </Connection>
+    <Connection name="#8">
+      <Origin ToolID="9" Connection="Output" />
+      <Destination ToolID="18" Connection="Input" />
+    </Connection>
+    <Connection name="#9">
+      <Origin ToolID="10" Connection="Output" />
+      <Destination ToolID="18" Connection="Input" />
+    </Connection>
+    <Connection name="#10">
+      <Origin ToolID="11" Connection="Output" />
+      <Destination ToolID="18" Connection="Input" />
+    </Connection>
+    <Connection name="#11">
+      <Origin ToolID="12" Connection="Output" />
+      <Destination ToolID="18" Connection="Input" />
+    </Connection>
+    <Connection name="#12">
+      <Origin ToolID="13" Connection="Output" />
+      <Destination ToolID="18" Connection="Input" />
+    </Connection>
+    <Connection name="#13">
+      <Origin ToolID="14" Connection="Output" />
+      <Destination ToolID="18" Connection="Input" />
+    </Connection>
+    <Connection name="#14">
+      <Origin ToolID="15" Connection="Output" />
+      <Destination ToolID="18" Connection="Input" />
+    </Connection>
+    <Connection name="#15">
+      <Origin ToolID="16" Connection="Output" />
+      <Destination ToolID="18" Connection="Input" />
+    </Connection>
+    <Connection name="#16">
+      <Origin ToolID="17" Connection="Output" />
+      <Destination ToolID="18" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="18" Connection="Output" />
+      <Destination ToolID="20" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>citibike_merge</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

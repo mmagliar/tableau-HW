@@ -1,0 +1,386 @@
+2019-06-22 21:38:17.531 (36428): -----------------------------------------------------------------------------
+2019-06-22 21:38:17.531 (36428): Initializing fault reporting
+2019-06-22 21:38:17.531 (36428): Fault reporting log pathname: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\tdeserver64-error_31036_19-0622-213817.log
+2019-06-22 21:38:17.539 (36428): Initializing MiniDump
+2019-06-22 21:38:17.539 (36428): Loading 'DbgHelp.dll'
+2019-06-22 21:38:17.541 (36428): Loaded 'C:\windows\SYSTEM32\dbghelp.dll'
+2019-06-22 21:38:17.545 (36428):   Product Name: Microsoft® Windows® Operating System
+2019-06-22 21:38:17.545 (36428):   File Version: 10.0.16299.15 (WinBuild.160101.0800)
+2019-06-22 21:38:17.545 (36428):   Product Version: 10.0.16299.15
+2019-06-22 21:38:17.545 (36428): Finding function 'MiniDumpWriteDump'
+2019-06-22 21:38:17.545 (36428): Success
+2019-06-22 21:38:17.545 (36428): Registering unhandled exception filter
+2019-06-22 21:38:17.546 (36428): -----------------------------------------------------------------------------
+2019-06-22 21:38:17.546 (36428): argv[0]="C:\Users\mmagliar\AppData\Local\Alteryx\bin\Tableau\tde\tdeserver64.exe"
+2019-06-22 21:38:17.546 (36428): argv[1]="--callback"
+2019-06-22 21:38:17.546 (36428): argv[2]="tab.pipe://./pipe/{37EAB5A2-07AF-4940-9570-FE299D0D31E9}"
+2019-06-22 21:38:17.546 (36428): argv[3]="--listen"
+2019-06-22 21:38:17.546 (36428): argv[4]="tab.pipe://./pipe/auto"
+2019-06-22 21:38:17.546 (36428): argv[5]="--desktop"
+2019-06-22 21:38:17.546 (36428): argv[6]="--log"
+2019-06-22 21:38:17.546 (36428): argv[7]="C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\DataExtract.log"
+2019-06-22 21:38:17.546 (36428): pid=31036
+2019-06-22 21:38:17.546 (36428): Machine Configuration
+2019-06-22 21:38:17.546 (36428):   Max Descriptors: -1
+2019-06-22 21:38:17.546 (36428): Vectorization Support
+2019-06-22 21:38:17.546 (36428):   Supports SSE:    Yes
+2019-06-22 21:38:17.546 (36428):   Supports SSE2:   Yes
+2019-06-22 21:38:17.546 (36428):   Supports SSE3:   Yes
+2019-06-22 21:38:17.546 (36428):   Supports SSE4.1: Yes
+2019-06-22 21:38:17.546 (36428):   Supports SSE4.2: Yes
+2019-06-22 21:38:17.546 (36428):   Supports AVX:    Yes
+2019-06-22 21:38:17.546 (36428):   Supports AVX2:   Yes
+2019-06-22 21:38:17.546 (36428): Adjusted Values
+2019-06-22 21:38:17.546 (36428):   Physical RAM:              17048244224
+2019-06-22 21:38:17.546 (36428):   CPUs available to process: 8
+2019-06-22 21:38:17.546 (36428):   worker-threads:            8
+2019-06-22 21:38:17.546 (36428):   max-concurrency:           4
+2019-06-22 21:38:17.546 (36428):   query-parallelism:         4
+2019-06-22 21:38:17.546 (36428):   min-query-parallelism:     2
+2019-06-22 21:38:17.546 (36428):   work-buffer-size:          64
+2019-06-22 21:38:17.546 (36428):   TrackingMappedFiles :      1
+2019-06-22 21:38:17.546 (36428):   MemoryMapEntireFile:       1
+2019-06-22 21:38:17.546 (36428):   use-openfile-cache:        1
+2019-06-22 21:38:17.549 (36428): tdeserver: server listening for incoming connections at: tab.pipe://./pipe/{E75F50CD-027C-4A76-9FA2-321CFB5C9E46}
+2019-06-22 21:38:17.549 (36428): tdeserver: new connection, connection=tab.pipe://./pipe/{E75F50CD-027C-4A76-9FA2-321CFB5C9E46}
+2019-06-22 21:38:17.549 (39408): tdeserver: open session1, connection=tab.pipe://./pipe/{E75F50CD-027C-4A76-9FA2-321CFB5C9E46}
+2019-06-22 21:38:17.550 (30260): Session1: QueryExecute:
+2019-06-22 21:38:17.550 (30260): (create database "C:\\Data_Science_Class\\Homework Working Directory\\18-Tableau\\tableau-HW\\working data\\citibike_merge.tde")
+2019-06-22 21:38:19.880 (30260): Compiling query with Memory Budget=10073935872 MemoryAvailable=10073935872
+2019-06-22 21:38:19.880 (30260): Session1: QueryExecute: OK, Elapsed time:2.330s, Compilation time:2.330s, Execution time:0.000s
+2019-06-22 21:38:19.881 (39152): Session1: QueryExecute:
+2019-06-22 21:38:19.881 (39152): (create schema [Extract])
+2019-06-22 21:38:19.881 (39152): Compiling query with Memory Budget=10073935872 MemoryAvailable=10073935872
+2019-06-22 21:38:19.984 (39152): Session1: QueryExecute: OK, Elapsed time:0.104s, Compilation time:0.000s, Execution time:0.104s
+2019-06-22 21:38:19.984 (38528): Session1: QueryExecute:
+2019-06-22 21:38:19.984 (38528): (create table [Extract].[Extract])
+2019-06-22 21:38:19.984 (38528): Compiling query with Memory Budget=10073931776 MemoryAvailable=10073931776
+2019-06-22 21:38:20.088 (38528): Session1: QueryExecute: OK, Elapsed time:0.104s, Compilation time:0.000s, Execution time:0.104s
+2019-06-22 21:38:20.088 (39508): Session1: QueryExecute:
+2019-06-22 21:38:20.088 (39508): (create column [Extract].[Extract].[tripduration] ( ( "collation" "binary" ) ( "compression" "heap" ) ( "factory" "varchar" ) ( "ordinal" "0" ) ( "scale" "1" ) ( "storagewidth" "8" ) ))
+2019-06-22 21:38:20.105 (39508): Compiling query with Memory Budget=10075009024 MemoryAvailable=10075009024
+2019-06-22 21:38:20.258 (39508): Session1: QueryExecute: OK, Elapsed time:0.170s, Compilation time:0.017s, Execution time:0.153s
+2019-06-22 21:38:20.258 (36768): Session1: QueryExecute:
+2019-06-22 21:38:20.258 (36768): (create column [Extract].[Extract].[starttime] ( ( "collation" "binary" ) ( "compression" "heap" ) ( "factory" "varchar" ) ( "ordinal" "1" ) ( "scale" "1" ) ( "storagewidth" "8" ) ))
+2019-06-22 21:38:20.258 (36768): Compiling query with Memory Budget=10074947584 MemoryAvailable=10074947584
+2019-06-22 21:38:20.329 (36768): Session1: QueryExecute: OK, Elapsed time:0.070s, Compilation time:0.000s, Execution time:0.070s
+2019-06-22 21:38:20.329 (39044): Session1: QueryExecute:
+2019-06-22 21:38:20.329 (39044): (create column [Extract].[Extract].[stoptime] ( ( "collation" "binary" ) ( "compression" "heap" ) ( "factory" "varchar" ) ( "ordinal" "2" ) ( "scale" "1" ) ( "storagewidth" "8" ) ))
+2019-06-22 21:38:20.329 (39044): Compiling query with Memory Budget=10074615808 MemoryAvailable=10074615808
+2019-06-22 21:38:20.398 (39044): Session1: QueryExecute: OK, Elapsed time:0.070s, Compilation time:0.000s, Execution time:0.070s
+2019-06-22 21:38:20.399 (37372): Session1: QueryExecute:
+2019-06-22 21:38:20.399 (37372): (create column [Extract].[Extract].[start station id] ( ( "collation" "binary" ) ( "compression" "heap" ) ( "factory" "varchar" ) ( "ordinal" "3" ) ( "scale" "1" ) ( "storagewidth" "8" ) ))
+2019-06-22 21:38:20.399 (37372): Compiling query with Memory Budget=10074435584 MemoryAvailable=10074435584
+2019-06-22 21:38:20.470 (37372): Session1: QueryExecute: OK, Elapsed time:0.071s, Compilation time:0.000s, Execution time:0.071s
+2019-06-22 21:38:20.470 (9052): Session1: QueryExecute:
+2019-06-22 21:38:20.470 (9052): (create column [Extract].[Extract].[start station name] ( ( "collation" "binary" ) ( "compression" "heap" ) ( "factory" "varchar" ) ( "ordinal" "4" ) ( "scale" "1" ) ( "storagewidth" "8" ) ))
+2019-06-22 21:38:20.470 (9052): Compiling query with Memory Budget=10074431488 MemoryAvailable=10074431488
+2019-06-22 21:38:20.542 (9052): Session1: QueryExecute: OK, Elapsed time:0.072s, Compilation time:0.000s, Execution time:0.072s
+2019-06-22 21:38:20.542 (30260): Session1: QueryExecute:
+2019-06-22 21:38:20.542 (30260): (create column [Extract].[Extract].[start station latitude] ( ( "collation" "binary" ) ( "compression" "heap" ) ( "factory" "varchar" ) ( "ordinal" "5" ) ( "scale" "1" ) ( "storagewidth" "8" ) ))
+2019-06-22 21:38:20.542 (30260): Compiling query with Memory Budget=10074423296 MemoryAvailable=10074423296
+2019-06-22 21:38:20.613 (30260): Session1: QueryExecute: OK, Elapsed time:0.071s, Compilation time:0.000s, Execution time:0.071s
+2019-06-22 21:38:20.613 (39152): Session1: QueryExecute:
+2019-06-22 21:38:20.613 (39152): (create column [Extract].[Extract].[start station longitude] ( ( "collation" "binary" ) ( "compression" "heap" ) ( "factory" "varchar" ) ( "ordinal" "6" ) ( "scale" "1" ) ( "storagewidth" "8" ) ))
+2019-06-22 21:38:20.613 (39152): Compiling query with Memory Budget=10074411008 MemoryAvailable=10074411008
+2019-06-22 21:38:20.691 (39152): Session1: QueryExecute: OK, Elapsed time:0.078s, Compilation time:0.000s, Execution time:0.078s
+2019-06-22 21:38:20.691 (38528): Session1: QueryExecute:
+2019-06-22 21:38:20.691 (38528): (create column [Extract].[Extract].[end station id] ( ( "collation" "binary" ) ( "compression" "heap" ) ( "factory" "varchar" ) ( "ordinal" "7" ) ( "scale" "1" ) ( "storagewidth" "8" ) ))
+2019-06-22 21:38:20.691 (38528): Compiling query with Memory Budget=10074148864 MemoryAvailable=10074148864
+2019-06-22 21:38:20.767 (38528): Session1: QueryExecute: OK, Elapsed time:0.075s, Compilation time:0.000s, Execution time:0.075s
+2019-06-22 21:38:20.767 (39508): Session1: QueryExecute:
+2019-06-22 21:38:20.767 (39508): (create column [Extract].[Extract].[end station name] ( ( "collation" "binary" ) ( "compression" "heap" ) ( "factory" "varchar" ) ( "ordinal" "8" ) ( "scale" "1" ) ( "storagewidth" "8" ) ))
+2019-06-22 21:38:20.767 (39508): Compiling query with Memory Budget=10074152960 MemoryAvailable=10074152960
+2019-06-22 21:38:20.840 (39508): Session1: QueryExecute: OK, Elapsed time:0.072s, Compilation time:0.000s, Execution time:0.072s
+2019-06-22 21:38:20.840 (36768): Session1: QueryExecute:
+2019-06-22 21:38:20.840 (36768): (create column [Extract].[Extract].[end station latitude] ( ( "collation" "binary" ) ( "compression" "heap" ) ( "factory" "varchar" ) ( "ordinal" "9" ) ( "scale" "1" ) ( "storagewidth" "8" ) ))
+2019-06-22 21:38:20.840 (36768): Compiling query with Memory Budget=10074030080 MemoryAvailable=10074030080
+2019-06-22 21:38:20.913 (36768): Session1: QueryExecute: OK, Elapsed time:0.073s, Compilation time:0.000s, Execution time:0.073s
+2019-06-22 21:38:20.913 (39044): Session1: QueryExecute:
+2019-06-22 21:38:20.913 (39044): (create column [Extract].[Extract].[end station longitude] ( ( "collation" "binary" ) ( "compression" "heap" ) ( "factory" "varchar" ) ( "ordinal" "10" ) ( "scale" "1" ) ( "storagewidth" "8" ) ))
+2019-06-22 21:38:20.913 (39044): Compiling query with Memory Budget=10073972736 MemoryAvailable=10073972736
+2019-06-22 21:38:20.986 (39044): Session1: QueryExecute: OK, Elapsed time:0.073s, Compilation time:0.000s, Execution time:0.073s
+2019-06-22 21:38:20.987 (37372): Session1: QueryExecute:
+2019-06-22 21:38:20.987 (37372): (create column [Extract].[Extract].[bikeid] ( ( "collation" "binary" ) ( "compression" "heap" ) ( "factory" "varchar" ) ( "ordinal" "11" ) ( "scale" "1" ) ( "storagewidth" "8" ) ))
+2019-06-22 21:38:20.987 (37372): Compiling query with Memory Budget=10073960448 MemoryAvailable=10073960448
+2019-06-22 21:38:21.060 (37372): Session1: QueryExecute: OK, Elapsed time:0.073s, Compilation time:0.000s, Execution time:0.073s
+2019-06-22 21:38:21.060 (9052): Session1: QueryExecute:
+2019-06-22 21:38:21.060 (9052): (create column [Extract].[Extract].[usertype] ( ( "collation" "binary" ) ( "compression" "heap" ) ( "factory" "varchar" ) ( "ordinal" "12" ) ( "scale" "1" ) ( "storagewidth" "8" ) ))
+2019-06-22 21:38:21.060 (9052): Compiling query with Memory Budget=10073686016 MemoryAvailable=10073686016
+2019-06-22 21:38:21.171 (9052): Session1: QueryExecute: OK, Elapsed time:0.111s, Compilation time:0.000s, Execution time:0.110s
+2019-06-22 21:38:21.171 (30260): Session1: QueryExecute:
+2019-06-22 21:38:21.171 (30260): (create column [Extract].[Extract].[birth year] ( ( "collation" "binary" ) ( "compression" "heap" ) ( "factory" "varchar" ) ( "ordinal" "13" ) ( "scale" "1" ) ( "storagewidth" "8" ) ))
+2019-06-22 21:38:21.171 (30260): Compiling query with Memory Budget=10073673728 MemoryAvailable=10073673728
+2019-06-22 21:38:21.265 (30260): Session1: QueryExecute: OK, Elapsed time:0.094s, Compilation time:0.000s, Execution time:0.094s
+2019-06-22 21:38:21.265 (39152): Session1: QueryExecute:
+2019-06-22 21:38:21.265 (39152): (create column [Extract].[Extract].[gender] ( ( "collation" "binary" ) ( "compression" "heap" ) ( "factory" "varchar" ) ( "ordinal" "14" ) ( "scale" "1" ) ( "storagewidth" "8" ) ))
+2019-06-22 21:38:21.265 (39152): Compiling query with Memory Budget=10073661440 MemoryAvailable=10073661440
+2019-06-22 21:38:21.341 (39152): Session1: QueryExecute: OK, Elapsed time:0.076s, Compilation time:0.000s, Execution time:0.076s
+2019-06-22 21:38:21.341 (38528): Session1: QueryExecute:
+2019-06-22 21:38:21.341 (38528): (create column [Extract].[Extract].[FileName1] ( ( "collation" "binary" ) ( "compression" "heap" ) ( "factory" "varchar" ) ( "ordinal" "15" ) ( "scale" "2" ) ( "storagewidth" "8" ) ))
+2019-06-22 21:38:21.342 (38528): Compiling query with Memory Budget=10073645056 MemoryAvailable=10073645056
+2019-06-22 21:38:21.417 (38528): Session1: QueryExecute: OK, Elapsed time:0.075s, Compilation time:0.000s, Execution time:0.075s
+2019-06-22 21:38:21.417 (39508): Session1: QueryExecute:
+2019-06-22 21:38:21.417 (39508): (create column [Extract].[Extract].[Date] ( ( "collation" "binary" ) ( "compression" "heap" ) ( "factory" "varchar" ) ( "ordinal" "16" ) ( "scale" "1" ) ( "storagewidth" "8" ) ))
+2019-06-22 21:38:21.417 (39508): Compiling query with Memory Budget=10074689536 MemoryAvailable=10074689536
+2019-06-22 21:38:21.493 (39508): Session1: QueryExecute: OK, Elapsed time:0.076s, Compilation time:0.000s, Execution time:0.076s
+2019-06-22 21:38:21.493 (36768): Session1: QueryExecute:
+2019-06-22 21:38:21.493 (36768): (create column [Extract].[Extract].[Year-Month-Day] ( ( "collation" "binary" ) ( "compression" "heap" ) ( "factory" "varchar" ) ( "ordinal" "17" ) ( "scale" "1" ) ( "storagewidth" "8" ) ))
+2019-06-22 21:38:21.493 (36768): Compiling query with Memory Budget=10074685440 MemoryAvailable=10074685440
+2019-06-22 21:38:21.566 (36768): Session1: QueryExecute: OK, Elapsed time:0.072s, Compilation time:0.000s, Execution time:0.072s
+2019-06-22 21:38:21.566 (39044): Session1: QueryExecute:
+2019-06-22 21:38:21.566 (39044): (create column [Extract].[Extract].[Year] ( ( "collation" "binary" ) ( "compression" "heap" ) ( "factory" "varchar" ) ( "ordinal" "18" ) ( "scale" "1" ) ( "storagewidth" "8" ) ))
+2019-06-22 21:38:21.566 (39044): Compiling query with Memory Budget=10074677248 MemoryAvailable=10074677248
+2019-06-22 21:38:21.650 (39044): Session1: QueryExecute: OK, Elapsed time:0.085s, Compilation time:0.000s, Execution time:0.085s
+2019-06-22 21:38:21.651 (37372): Session1: QueryExecute:
+2019-06-22 21:38:21.651 (37372): (create column [Extract].[Extract].[Month] ( ( "collation" "binary" ) ( "compression" "heap" ) ( "factory" "varchar" ) ( "ordinal" "19" ) ( "scale" "1" ) ( "storagewidth" "8" ) ))
+2019-06-22 21:38:21.651 (37372): Compiling query with Memory Budget=10074599424 MemoryAvailable=10074599424
+2019-06-22 21:38:21.736 (37372): Session1: QueryExecute: OK, Elapsed time:0.085s, Compilation time:0.000s, Execution time:0.085s
+2019-06-22 21:38:21.736 (9052): Session1: QueryExecute:
+2019-06-22 21:38:21.736 (9052): (create column [Extract].[Extract].[Day] ( ( "collation" "binary" ) ( "compression" "heap" ) ( "factory" "varchar" ) ( "ordinal" "20" ) ( "scale" "1" ) ( "storagewidth" "8" ) ))
+2019-06-22 21:38:21.737 (9052): Compiling query with Memory Budget=10074607616 MemoryAvailable=10074607616
+2019-06-22 21:38:21.824 (9052): Session1: QueryExecute: OK, Elapsed time:0.088s, Compilation time:0.000s, Execution time:0.088s
+2019-06-22 21:38:21.841 (30260): Session1: InsertOpen: table="Extract" schema="Extract"
+2019-06-22 21:38:21.841 (30260):   column[0]="tripduration"
+2019-06-22 21:38:21.841 (30260):   column[1]="starttime"
+2019-06-22 21:38:21.841 (30260):   column[2]="stoptime"
+2019-06-22 21:38:21.841 (30260):   column[3]="start station id"
+2019-06-22 21:38:21.841 (30260):   column[4]="start station name"
+2019-06-22 21:38:21.841 (30260):   column[5]="start station latitude"
+2019-06-22 21:38:21.841 (30260):   column[6]="start station longitude"
+2019-06-22 21:38:21.841 (30260):   column[7]="end station id"
+2019-06-22 21:38:21.841 (30260):   column[8]="end station name"
+2019-06-22 21:38:21.841 (30260):   column[9]="end station latitude"
+2019-06-22 21:38:21.841 (30260):   column[10]="end station longitude"
+2019-06-22 21:38:21.841 (30260):   column[11]="bikeid"
+2019-06-22 21:38:21.841 (30260):   column[12]="usertype"
+2019-06-22 21:38:21.841 (30260):   column[13]="birth year"
+2019-06-22 21:38:21.841 (30260):   column[14]="gender"
+2019-06-22 21:38:21.841 (30260):   column[15]="FileName1"
+2019-06-22 21:38:21.841 (30260):   column[16]="Date"
+2019-06-22 21:38:21.841 (30260):   column[17]="Year-Month-Day"
+2019-06-22 21:38:21.841 (30260):   column[18]="Year"
+2019-06-22 21:38:21.841 (30260):   column[19]="Month"
+2019-06-22 21:38:21.841 (30260):   column[20]="Day"
+2019-06-22 21:38:22.079 (39152): Session1: InsertPutValues: total_calls=1 total_message_size=8388962
+2019-06-22 21:38:27.005 (39328): LogScopeTime: FlowTable::Build,0,2019-06-22 21:38:21.8420,5.16
+2019-06-22 21:38:28.490 (37372): LogScopeTime: Save::Build,448795,2019-06-22 21:38:27.0060,1.48
+2019-06-22 21:38:28.525 (37372): Session1: InsertCommit: insert_guid=1 total_calls=21 total_message_size=172180934
+2019-06-22 21:38:28.525 (37372): Session1: InsertCommit: OK
+2019-06-22 21:38:28.525 (9052): Session1: InsertClose: insert_guid=1
+2019-06-22 21:38:28.526 (9052): Session1: InsertClose: OK
+2019-06-22 21:38:28.527 (30260): Session1: QueryExecute:
+2019-06-22 21:38:28.527 (30260): (package)
+2019-06-22 21:38:28.527 (30260): Compiling query with Memory Budget=10028023808 MemoryAvailable=10028023808
+2019-06-22 21:38:28.527 (30260): PackageDatabase: in-place package of "C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\citibike_merge.tde"
+2019-06-22 21:38:28.867 (30260): PackageDatabase: finished
+2019-06-22 21:38:28.867 (30260): Session1: QueryExecute: OK, Elapsed time:0.340s, Compilation time:0.000s, Execution time:0.340s
+2019-06-22 21:38:28.867 (39152): Session1: QueryExecute:
+2019-06-22 21:38:28.867 (39152): (database "C:\\Data_Science_Class\\Homework Working Directory\\18-Tableau\\tableau-HW\\working data\\citibike_merge.tde")
+2019-06-22 21:38:28.870 (39152): Compiling query with Memory Budget=10029662208 MemoryAvailable=10029662208
+2019-06-22 21:38:28.870 (39152): Session1: QueryExecute: OK, Elapsed time:0.002s, Compilation time:0.002s, Execution time:0.000s
+2019-06-22 21:38:28.870 (38528): Session1: QueryExecute:
+2019-06-22 21:38:28.870 (38528): (show schemas)
+2019-06-22 21:38:28.870 (38528): Compiling query with Memory Budget=10029662208 MemoryAvailable=10029662208
+2019-06-22 21:38:28.870 (38528): Session1: QueryExecute: OK rowset_guid=2 n_columns=1, Elapsed time:0.000s, Compilation time:0.000s, Execution time:0.000s
+2019-06-22 21:38:28.871 (39508): Session1: RowsetGetValues: rowset_guid=2
+2019-06-22 21:38:28.871 (36768): Session1: RowsetGetValues: rowset_guid=2
+2019-06-22 21:38:28.871 (39044): Session1: RowsetClose: rowset_guid=2
+2019-06-22 21:38:28.871 (37372): Session1: QueryExecute:
+2019-06-22 21:38:28.871 (37372): (show tables [Extract])
+2019-06-22 21:38:28.871 (37372): Compiling query with Memory Budget=10029662208 MemoryAvailable=10029662208
+2019-06-22 21:38:28.872 (37372): Session1: QueryExecute: OK rowset_guid=3 n_columns=1, Elapsed time:0.001s, Compilation time:0.000s, Execution time:0.001s
+2019-06-22 21:38:28.872 (9052): Session1: RowsetGetValues: rowset_guid=3
+2019-06-22 21:38:28.872 (30260): Session1: RowsetGetValues: rowset_guid=3
+2019-06-22 21:38:28.872 (39152): Session1: RowsetClose: rowset_guid=3
+2019-06-22 21:38:28.872 (38528): Session1: QueryExecute:
+2019-06-22 21:38:28.872 (38528): (top (table [Extract].[Extract]) () 0)
+2019-06-22 21:38:28.880 (38528): Compiling query with DOP=4
+2019-06-22 21:38:28.881 (38528): Compiling query with Memory Budget=10029662208 MemoryAvailable=10029662208
+2019-06-22 21:38:28.883 (38528): Session1: QueryExecute: OK rowset_guid=4 n_columns=21, Elapsed time:0.010s, Compilation time:0.008s, Execution time:0.001s
+2019-06-22 21:38:28.884 (39508): Session1: RowsetClose: rowset_guid=4
+2019-06-22 21:38:28.884 (36768): Session1: QueryExecute:
+2019-06-22 21:38:28.884 (36768): (alter column [Extract].[Extract].[tripduration] ( ( "comparable" "comparable" ) ( "compression" "array" ) ( "storagewidth" "0" ) ) )
+2019-06-22 21:38:28.884 (36768): Compiling query with Memory Budget=10029662208 MemoryAvailable=10029662208
+2019-06-22 21:38:28.885 (36768): Session1: QueryExecute: OK, Elapsed time:0.001s, Compilation time:0.000s, Execution time:0.001s
+2019-06-22 21:38:28.886 (39044): Session1: QueryExecute:
+2019-06-22 21:38:28.886 (39044): (alter column [Extract].[Extract].[starttime] ( ( "comparable" "comparable" ) ( "compression" "array" ) ( "storagewidth" "0" ) ) )
+2019-06-22 21:38:28.886 (39044): Compiling query with Memory Budget=10029662208 MemoryAvailable=10029662208
+2019-06-22 21:38:29.314 (39044): Session1: QueryExecute: OK, Elapsed time:0.428s, Compilation time:0.000s, Execution time:0.428s
+2019-06-22 21:38:29.315 (37372): Session1: QueryExecute:
+2019-06-22 21:38:29.315 (37372): (alter column [Extract].[Extract].[stoptime] ( ( "comparable" "comparable" ) ( "compression" "array" ) ( "storagewidth" "0" ) ) )
+2019-06-22 21:38:29.315 (37372): Compiling query with Memory Budget=10014150656 MemoryAvailable=10014150656
+2019-06-22 21:38:29.737 (37372): Session1: QueryExecute: OK, Elapsed time:0.422s, Compilation time:0.000s, Execution time:0.422s
+2019-06-22 21:38:29.737 (9052): Session1: QueryExecute:
+2019-06-22 21:38:29.737 (9052): (alter column [Extract].[Extract].[start station id] ( ( "comparable" "comparable" ) ( "compression" "array" ) ( "storagewidth" "0" ) ) )
+2019-06-22 21:38:29.737 (9052): Compiling query with Memory Budget=10001465344 MemoryAvailable=10001465344
+2019-06-22 21:38:29.808 (9052): Session1: QueryExecute: OK, Elapsed time:0.071s, Compilation time:0.000s, Execution time:0.071s
+2019-06-22 21:38:29.808 (30260): Session1: QueryExecute:
+2019-06-22 21:38:29.808 (30260): (alter column [Extract].[Extract].[start station name] ( ( "comparable" "comparable" ) ( "compression" "array" ) ( "storagewidth" "0" ) ) )
+2019-06-22 21:38:29.808 (30260): Compiling query with Memory Budget=10001649664 MemoryAvailable=10001649664
+2019-06-22 21:38:29.879 (30260): Session1: QueryExecute: OK, Elapsed time:0.071s, Compilation time:0.000s, Execution time:0.071s
+2019-06-22 21:38:29.879 (39152): Session1: QueryExecute:
+2019-06-22 21:38:29.879 (39152): (alter column [Extract].[Extract].[start station latitude] ( ( "comparable" "comparable" ) ( "compression" "array" ) ( "storagewidth" "0" ) ) )
+2019-06-22 21:38:29.880 (39152): Compiling query with Memory Budget=10001707008 MemoryAvailable=10001707008
+2019-06-22 21:38:29.955 (39152): Session1: QueryExecute: OK, Elapsed time:0.075s, Compilation time:0.000s, Execution time:0.075s
+2019-06-22 21:38:29.955 (38528): Session1: QueryExecute:
+2019-06-22 21:38:29.955 (38528): (alter column [Extract].[Extract].[start station longitude] ( ( "comparable" "comparable" ) ( "compression" "array" ) ( "storagewidth" "0" ) ) )
+2019-06-22 21:38:29.955 (38528): Compiling query with Memory Budget=10002149376 MemoryAvailable=10002149376
+2019-06-22 21:38:30.024 (38528): Session1: QueryExecute: OK, Elapsed time:0.069s, Compilation time:0.000s, Execution time:0.069s
+2019-06-22 21:38:30.025 (39508): Session1: QueryExecute:
+2019-06-22 21:38:30.025 (39508): (alter column [Extract].[Extract].[end station id] ( ( "comparable" "comparable" ) ( "compression" "array" ) ( "storagewidth" "0" ) ) )
+2019-06-22 21:38:30.025 (39508): Compiling query with Memory Budget=10002169856 MemoryAvailable=10002169856
+2019-06-22 21:38:30.073 (39508): Session1: QueryExecute: OK, Elapsed time:0.049s, Compilation time:0.000s, Execution time:0.049s
+2019-06-22 21:38:30.074 (36768): Session1: QueryExecute:
+2019-06-22 21:38:30.074 (36768): (alter column [Extract].[Extract].[end station name] ( ( "comparable" "comparable" ) ( "compression" "array" ) ( "storagewidth" "0" ) ) )
+2019-06-22 21:38:30.074 (36768): Compiling query with Memory Budget=10002169856 MemoryAvailable=10002169856
+2019-06-22 21:38:30.075 (36768): Session1: QueryExecute: OK, Elapsed time:0.001s, Compilation time:0.000s, Execution time:0.001s
+2019-06-22 21:38:30.075 (39044): Session1: QueryExecute:
+2019-06-22 21:38:30.075 (39044): (alter column [Extract].[Extract].[end station latitude] ( ( "comparable" "comparable" ) ( "compression" "array" ) ( "storagewidth" "0" ) ) )
+2019-06-22 21:38:30.075 (39044): Compiling query with Memory Budget=10002169856 MemoryAvailable=10002169856
+2019-06-22 21:38:30.076 (39044): Session1: QueryExecute: OK, Elapsed time:0.001s, Compilation time:0.000s, Execution time:0.001s
+2019-06-22 21:38:30.076 (37372): Session1: QueryExecute:
+2019-06-22 21:38:30.076 (37372): (alter column [Extract].[Extract].[end station longitude] ( ( "comparable" "comparable" ) ( "compression" "array" ) ( "storagewidth" "0" ) ) )
+2019-06-22 21:38:30.076 (37372): Compiling query with Memory Budget=10002169856 MemoryAvailable=10002169856
+2019-06-22 21:38:30.077 (37372): Session1: QueryExecute: OK, Elapsed time:0.001s, Compilation time:0.000s, Execution time:0.001s
+2019-06-22 21:38:30.078 (9052): Session1: QueryExecute:
+2019-06-22 21:38:30.078 (9052): (alter column [Extract].[Extract].[bikeid] ( ( "comparable" "comparable" ) ( "compression" "array" ) ( "storagewidth" "0" ) ) )
+2019-06-22 21:38:30.078 (9052): Compiling query with Memory Budget=10002169856 MemoryAvailable=10002169856
+2019-06-22 21:38:30.079 (9052): Session1: QueryExecute: OK, Elapsed time:0.001s, Compilation time:0.000s, Execution time:0.001s
+2019-06-22 21:38:30.079 (30260): Session1: QueryExecute:
+2019-06-22 21:38:30.079 (30260): (alter column [Extract].[Extract].[usertype] ( ( "comparable" "comparable" ) ( "compression" "array" ) ( "storagewidth" "0" ) ) )
+2019-06-22 21:38:30.079 (30260): Compiling query with Memory Budget=10002169856 MemoryAvailable=10002169856
+2019-06-22 21:38:30.080 (30260): Session1: QueryExecute: OK, Elapsed time:0.001s, Compilation time:0.000s, Execution time:0.001s
+2019-06-22 21:38:30.080 (39152): Session1: QueryExecute:
+2019-06-22 21:38:30.080 (39152): (alter column [Extract].[Extract].[birth year] ( ( "comparable" "comparable" ) ( "compression" "array" ) ( "storagewidth" "0" ) ) )
+2019-06-22 21:38:30.080 (39152): Compiling query with Memory Budget=10002169856 MemoryAvailable=10002169856
+2019-06-22 21:38:30.081 (39152): Session1: QueryExecute: OK, Elapsed time:0.001s, Compilation time:0.000s, Execution time:0.001s
+2019-06-22 21:38:30.082 (38528): Session1: QueryExecute:
+2019-06-22 21:38:30.082 (38528): (alter column [Extract].[Extract].[gender] ( ( "comparable" "comparable" ) ( "compression" "array" ) ( "storagewidth" "0" ) ) )
+2019-06-22 21:38:30.082 (38528): Compiling query with Memory Budget=10002169856 MemoryAvailable=10002169856
+2019-06-22 21:38:30.083 (38528): Session1: QueryExecute: OK, Elapsed time:0.001s, Compilation time:0.000s, Execution time:0.001s
+2019-06-22 21:38:30.083 (39508): Session1: QueryExecute:
+2019-06-22 21:38:30.083 (39508): (alter column [Extract].[Extract].[FileName1] ( ( "comparable" "comparable" ) ( "compression" "array" ) ( "storagewidth" "0" ) ) )
+2019-06-22 21:38:30.083 (39508): Compiling query with Memory Budget=10002169856 MemoryAvailable=10002169856
+2019-06-22 21:38:30.084 (39508): Session1: QueryExecute: OK, Elapsed time:0.001s, Compilation time:0.000s, Execution time:0.001s
+2019-06-22 21:38:30.084 (36768): Session1: QueryExecute:
+2019-06-22 21:38:30.084 (36768): (alter column [Extract].[Extract].[Date] ( ( "comparable" "comparable" ) ( "compression" "array" ) ( "storagewidth" "0" ) ) )
+2019-06-22 21:38:30.084 (36768): Compiling query with Memory Budget=10002169856 MemoryAvailable=10002169856
+2019-06-22 21:38:30.164 (36768): Session1: QueryExecute: OK, Elapsed time:0.079s, Compilation time:0.000s, Execution time:0.079s
+2019-06-22 21:38:30.164 (39044): Session1: QueryExecute:
+2019-06-22 21:38:30.164 (39044): (alter column [Extract].[Extract].[Year-Month-Day] ( ( "comparable" "comparable" ) ( "compression" "array" ) ( "storagewidth" "0" ) ) )
+2019-06-22 21:38:30.165 (39044): Compiling query with Memory Budget=10002153472 MemoryAvailable=10002153472
+2019-06-22 21:38:30.236 (39044): Session1: QueryExecute: OK, Elapsed time:0.072s, Compilation time:0.000s, Execution time:0.072s
+2019-06-22 21:38:30.236 (37372): Session1: QueryExecute:
+2019-06-22 21:38:30.236 (37372): (alter column [Extract].[Extract].[Year] ( ( "comparable" "comparable" ) ( "compression" "array" ) ( "storagewidth" "0" ) ) )
+2019-06-22 21:38:30.236 (37372): Compiling query with Memory Budget=10002423808 MemoryAvailable=10002423808
+2019-06-22 21:38:30.274 (37372): Session1: QueryExecute: OK, Elapsed time:0.038s, Compilation time:0.000s, Execution time:0.038s
+2019-06-22 21:38:30.274 (9052): Session1: QueryExecute:
+2019-06-22 21:38:30.274 (9052): (alter column [Extract].[Extract].[Month] ( ( "comparable" "comparable" ) ( "compression" "array" ) ( "storagewidth" "0" ) ) )
+2019-06-22 21:38:30.274 (9052): Compiling query with Memory Budget=10002423808 MemoryAvailable=10002423808
+2019-06-22 21:38:30.310 (9052): Session1: QueryExecute: OK, Elapsed time:0.036s, Compilation time:0.000s, Execution time:0.036s
+2019-06-22 21:38:30.310 (30260): Session1: QueryExecute:
+2019-06-22 21:38:30.310 (30260): (alter column [Extract].[Extract].[Day] ( ( "comparable" "comparable" ) ( "compression" "array" ) ( "storagewidth" "0" ) ) )
+2019-06-22 21:38:30.311 (30260): Compiling query with Memory Budget=10002436096 MemoryAvailable=10002436096
+2019-06-22 21:38:30.349 (30260): Session1: QueryExecute: OK, Elapsed time:0.038s, Compilation time:0.000s, Execution time:0.038s
+2019-06-22 21:38:30.349 (39152): Session1: QueryExecute:
+2019-06-22 21:38:30.349 (39152): (top (table [Extract].[Extract]) () 0)
+2019-06-22 21:38:30.352 (39152): Compiling query with DOP=4
+2019-06-22 21:38:30.353 (39152): Compiling query with Memory Budget=10002546688 MemoryAvailable=10002546688
+2019-06-22 21:38:30.363 (39152): Session1: QueryExecute: OK rowset_guid=5 n_columns=21, Elapsed time:0.013s, Compilation time:0.003s, Execution time:0.010s
+2019-06-22 21:38:30.364 (38528): Session1: RowsetClose: rowset_guid=5
+2019-06-22 21:38:30.364 (39508): Session1: QueryExecute:
+2019-06-22 21:38:30.364 (39508): (sort [Extract].[Extract] ( ( [usertype] asc) ( [Year] asc) ( [gender] asc) ( [Month] asc) ( [Date] asc) ( [Year-Month-Day] asc) ( [start station id] asc) ( [start station name] asc) ( [start station latitude] asc) ( [start station longitude] asc) ( [birth year] asc) ( [end station id] asc) ( [end station name] asc) ( [end station latitude] asc) ( [end station longitude] asc) ( [bikeid] asc) ( [tripduration] asc) ( [stoptime] asc) ( [starttime] asc) ) )
+2019-06-22 21:38:30.364 (39508): Compiling query with Memory Budget=10002546688 MemoryAvailable=10002546688
+2019-06-22 21:38:32.506 (39508): LogScopeTime: Save::Build,448795,2019-06-22 21:38:31.1190,1.39
+2019-06-22 21:38:32.575 (39508): Session1: QueryExecute: OK, Elapsed time:2.211s, Compilation time:0.000s, Execution time:2.211s
+2019-06-22 21:38:32.575 (36768): Session1: QueryExecute:
+2019-06-22 21:38:32.575 (36768): (package)
+2019-06-22 21:38:32.575 (36768): Compiling query with Memory Budget=9996251136 MemoryAvailable=9996251136
+2019-06-22 21:38:32.575 (36768): PackageDatabase: in-place package of "C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\citibike_merge.tde"
+2019-06-22 21:38:32.831 (36768): PackageDatabase: finished
+2019-06-22 21:38:32.831 (36768): Session1: QueryExecute: OK, Elapsed time:0.255s, Compilation time:0.000s, Execution time:0.255s
+2019-06-22 21:38:32.831 (39408): tdeserver: close session1, connection=tab.pipe://./pipe/{E75F50CD-027C-4A76-9FA2-321CFB5C9E46}
+2019-06-22 21:38:32.831 (36428): tdeserver: closing connection=tab.pipe://./pipe/{E75F50CD-027C-4A76-9FA2-321CFB5C9E46}
+2019-06-22 21:38:32.831 (39408): tdeserver: disconnected connection=tab.pipe://./pipe/{E75F50CD-027C-4A76-9FA2-321CFB5C9E46}: IPC_NamedPipeConnection::Read(len=16, connection=tab.pipe://./pipe/{E75F50CD-027C-4A76-9FA2-321CFB5C9E46}): The pipe has been ended.
+2019-06-22 21:38:32.831 (36428): tdeserver: exit (0)
+2019-06-22 21:43:51.457 (34212): -----------------------------------------------------------------------------
+2019-06-22 21:43:51.457 (34212): Initializing fault reporting
+2019-06-22 21:43:51.457 (34212): Fault reporting log pathname: C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\tdeserver64-error_40660_19-0622-214351.log
+2019-06-22 21:43:51.464 (34212): Initializing MiniDump
+2019-06-22 21:43:51.464 (34212): Loading 'DbgHelp.dll'
+2019-06-22 21:43:51.465 (34212): Loaded 'C:\windows\SYSTEM32\dbghelp.dll'
+2019-06-22 21:43:51.468 (34212):   Product Name: Microsoft® Windows® Operating System
+2019-06-22 21:43:51.468 (34212):   File Version: 10.0.16299.15 (WinBuild.160101.0800)
+2019-06-22 21:43:51.468 (34212):   Product Version: 10.0.16299.15
+2019-06-22 21:43:51.468 (34212): Finding function 'MiniDumpWriteDump'
+2019-06-22 21:43:51.468 (34212): Success
+2019-06-22 21:43:51.468 (34212): Registering unhandled exception filter
+2019-06-22 21:43:51.468 (34212): -----------------------------------------------------------------------------
+2019-06-22 21:43:51.468 (34212): argv[0]="C:\Users\mmagliar\AppData\Local\Alteryx\bin\Tableau\tde\tdeserver64.exe"
+2019-06-22 21:43:51.468 (34212): argv[1]="--callback"
+2019-06-22 21:43:51.468 (34212): argv[2]="tab.pipe://./pipe/{7B511DB0-0A07-44CD-BCA6-537F582324A9}"
+2019-06-22 21:43:51.468 (34212): argv[3]="--listen"
+2019-06-22 21:43:51.468 (34212): argv[4]="tab.pipe://./pipe/auto"
+2019-06-22 21:43:51.468 (34212): argv[5]="--desktop"
+2019-06-22 21:43:51.468 (34212): argv[6]="--log"
+2019-06-22 21:43:51.468 (34212): argv[7]="C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\DataExtract.log"
+2019-06-22 21:43:51.469 (34212): pid=40660
+2019-06-22 21:43:51.469 (34212): Machine Configuration
+2019-06-22 21:43:51.469 (34212):   Max Descriptors: -1
+2019-06-22 21:43:51.469 (34212): Vectorization Support
+2019-06-22 21:43:51.469 (34212):   Supports SSE:    Yes
+2019-06-22 21:43:51.469 (34212):   Supports SSE2:   Yes
+2019-06-22 21:43:51.469 (34212):   Supports SSE3:   Yes
+2019-06-22 21:43:51.469 (34212):   Supports SSE4.1: Yes
+2019-06-22 21:43:51.469 (34212):   Supports SSE4.2: Yes
+2019-06-22 21:43:51.469 (34212):   Supports AVX:    Yes
+2019-06-22 21:43:51.469 (34212):   Supports AVX2:   Yes
+2019-06-22 21:43:51.469 (34212): Adjusted Values
+2019-06-22 21:43:51.469 (34212):   Physical RAM:              17048244224
+2019-06-22 21:43:51.469 (34212):   CPUs available to process: 8
+2019-06-22 21:43:51.469 (34212):   worker-threads:            8
+2019-06-22 21:43:51.469 (34212):   max-concurrency:           4
+2019-06-22 21:43:51.469 (34212):   query-parallelism:         4
+2019-06-22 21:43:51.469 (34212):   min-query-parallelism:     2
+2019-06-22 21:43:51.469 (34212):   work-buffer-size:          64
+2019-06-22 21:43:51.469 (34212):   TrackingMappedFiles :      1
+2019-06-22 21:43:51.469 (34212):   MemoryMapEntireFile:       1
+2019-06-22 21:43:51.469 (34212):   use-openfile-cache:        1
+2019-06-22 21:43:51.470 (34212): tdeserver: server listening for incoming connections at: tab.pipe://./pipe/{4C5451D0-EA62-4BBB-9E16-C386F69E81AF}
+2019-06-22 21:43:51.470 (34212): tdeserver: new connection, connection=tab.pipe://./pipe/{4C5451D0-EA62-4BBB-9E16-C386F69E81AF}
+2019-06-22 21:43:51.470 (37964): tdeserver: open session1, connection=tab.pipe://./pipe/{4C5451D0-EA62-4BBB-9E16-C386F69E81AF}
+2019-06-22 21:43:51.471 (39772): Session1: QueryExecute:
+2019-06-22 21:43:51.471 (39772): (database "C:\\Data_Science_Class\\Homework Working Directory\\18-Tableau\\tableau-HW\\working data\\citibike_merge.tde")
+2019-06-22 21:43:51.473 (39772): Compiling query with Memory Budget=9548263424 MemoryAvailable=9548263424
+2019-06-22 21:43:51.473 (39772): Session1: QueryExecute: OK, Elapsed time:0.002s, Compilation time:0.002s, Execution time:0.000s
+2019-06-22 21:43:51.473 (34308): Session1: QueryExecute:
+2019-06-22 21:43:51.473 (34308): (show schemas)
+2019-06-22 21:43:51.473 (34308): Compiling query with Memory Budget=9548136448 MemoryAvailable=9548136448
+2019-06-22 21:43:51.474 (34308): Session1: QueryExecute: OK rowset_guid=1 n_columns=1, Elapsed time:0.001s, Compilation time:0.000s, Execution time:0.001s
+2019-06-22 21:43:51.474 (19912): Session1: RowsetGetValues: rowset_guid=1
+2019-06-22 21:43:51.474 (37868): Session1: RowsetGetValues: rowset_guid=1
+2019-06-22 21:43:51.474 (36968): Session1: RowsetClose: rowset_guid=1
+2019-06-22 21:43:51.475 (8932): Session1: QueryExecute:
+2019-06-22 21:43:51.475 (8932): (show tables [Extract])
+2019-06-22 21:43:51.475 (8932): Compiling query with Memory Budget=9547739136 MemoryAvailable=9547739136
+2019-06-22 21:43:51.476 (8932): Session1: QueryExecute: OK rowset_guid=2 n_columns=1, Elapsed time:0.001s, Compilation time:0.000s, Execution time:0.001s
+2019-06-22 21:43:51.476 (14420): Session1: RowsetGetValues: rowset_guid=2
+2019-06-22 21:43:51.476 (31968): Session1: RowsetGetValues: rowset_guid=2
+2019-06-22 21:43:51.476 (39772): Session1: RowsetClose: rowset_guid=2
+2019-06-22 21:43:51.477 (34308): Session1: QueryExecute:
+2019-06-22 21:43:51.477 (34308): (top (table [Extract].[Extract]) () 0)
+2019-06-22 21:43:51.486 (34308): Compiling query with DOP=4
+2019-06-22 21:43:51.487 (34308): Compiling query with Memory Budget=9545449472 MemoryAvailable=9545449472
+2019-06-22 21:43:51.489 (34308): Session1: QueryExecute: OK rowset_guid=3 n_columns=21, Elapsed time:0.011s, Compilation time:0.010s, Execution time:0.001s
+2019-06-22 21:43:51.490 (19912): Session1: RowsetClose: rowset_guid=3
+2019-06-22 21:43:51.491 (37868): Session1: QueryExecute:
+2019-06-22 21:43:51.491 (37868): (package)
+2019-06-22 21:43:51.491 (37868): Compiling query with Memory Budget=9544720384 MemoryAvailable=9544720384
+2019-06-22 21:43:51.491 (37868): PackageDatabase: in-place package of "C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\citibike_merge.tde"
+2019-06-22 21:43:51.581 (37868): TDE error=401: PackageDatabase: failed, src="C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\citibike_merge.tde", dst="C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\citibike_merge.tde.pkg", errno=32, error="The process cannot access the file because it is being used by another process.", exception="C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\citibike_merge.tde"
+2019-06-22 21:43:51.581 (37868): Session1: QueryExecute: FAILED, error=PackageDatabase: failed, src="C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\citibike_merge.tde", dst="C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\citibike_merge.tde.pkg", errno=32, error="The process cannot access the file because it is being used by another process.", exception="C:\Data_Science_Class\Homework Working Directory\18-Tableau\tableau-HW\working data\citibike_merge.tde", Elapsed time:0.090s, Compilation time:0.000s, Execution time:0.090s
+2019-06-22 21:43:51.581 (37964): tdeserver: close session1, connection=tab.pipe://./pipe/{4C5451D0-EA62-4BBB-9E16-C386F69E81AF}
+2019-06-22 21:43:51.581 (34212): tdeserver: closing connection=tab.pipe://./pipe/{4C5451D0-EA62-4BBB-9E16-C386F69E81AF}
+2019-06-22 21:43:51.581 (37964): tdeserver: disconnected connection=tab.pipe://./pipe/{4C5451D0-EA62-4BBB-9E16-C386F69E81AF}: IPC_NamedPipeConnection::Read(len=16, connection=tab.pipe://./pipe/{4C5451D0-EA62-4BBB-9E16-C386F69E81AF}): The pipe has been ended.
+2019-06-22 21:43:51.581 (34212): tdeserver: exit (0)
