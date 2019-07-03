@@ -1,5 +1,7 @@
 # Tableau Assignment - Citi Bike Analytics
 
+https://public.tableau.com/shared/TK32C6J4D?:display_count=yes&:origin=viz_share_link
+
 ## Background
 
 ![Citi-Bikes](Images/citi-bike-station-bikes.jpg)
